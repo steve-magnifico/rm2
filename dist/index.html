@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="청운시에서 부동산을 거래하고 도시의 변화를 읽는 수업용 시뮬레이션"><title>청운시 개발일지</title><link rel="stylesheet" href="style.css"><script src="game.js" defer></script></head>
+<body><div class="shell">
+<aside class="rail"><div class="brand"><span class="crest" data-icon="city"></span><div><b>청운시</b><small>개발일지</small></div></div>
+<div class="rail-label">청운시 둘러보기</div>
+<nav id="nav"><button class="active" data-view="map"><i data-icon="map"></i>도시 지도</button><button data-view="market"><i data-icon="city"></i>부동산 시장</button><button data-view="bank"><i data-icon="bank"></i>청운은행</button><button data-view="pf"><i data-icon="hard"></i>프로젝트 PF</button><button data-view="ledger"><i data-icon="book"></i>투자 장부</button></nav>
+<div class="rail-foot"><button class="quiet" data-action="setup"><i data-icon="settings"></i>새 시뮬레이션</button><div class="profile"><span>투</span><div><b>투자자</b><small>청운시 개발조합</small></div></div></div></aside>
+<main><header class="top"><span class="crumb"><i data-icon="map"></i> 시뮬레이션 <em>/</em> <b id="crumb">도시 지도</b></span><div class="ticker" id="ticker"></div></header>
+<div class="content"><section class="intro"><div><div class="eyebrow"><span></span> 청운시 부동산 시뮬레이션</div><h1 id="title">청운시 개발일지</h1><p id="subtitle">도시를 둘러보고, 변화의 첫 단서를 찾으세요.</p></div><button class="outline" data-action="setup" id="mode"></button></section>
+<section class="stats" id="stats"></section><div id="view"></div></div></main></div>
+<dialog id="dialog"><div id="dialog-body"></div></dialog><div id="toast" role="status" aria-live="polite"></div>
+</body></html>
